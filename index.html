@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="RockPaperScissor.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="RockPaperScissor.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav_case">
+            <h1  >Rock Paper Scissor</h1>
+            <button class="reset" onclick="reset();"><i class="fas fa-sync-alt"></i></button>
+        </div>
+    </nav>
+    
+    <div class="game">
+        <h2>MAKE A SELECTION</h2>
+        <div class="user_btn">
+        <!-- <input type="button" class="btn" id="btn" value=" Rock" onclick="rock();">
+        <input type="button" class="btn" id="btn" value="Paper" onclick="paper();">
+        <input type="button" class="btn" id="btn" value=" Sciccor" onclick="scissor();"> -->
+        <span class="special_btn">
+                <i class="fas fa-hand-rock"  id="rock" style="font-size:50px" onclick="rock();" ></i>
+                <i class="fas fa-hand-paper" id="paper" style="font-size:50px" onclick="paper();"  ></i>
+                <i class="fas fa-hand-scissors" id="scissor" style="font-size:50px" onclick="scissor();" ></i>
+            </span>
+        </div>
+        
+        <div class="player_holder">
+    
+            <p class="player"><b>PLAYER</b></p>
+            <p><b id="eva">WHO WON</b> </p>
+            <p class="computer"><b>COMPUTER</b></p>
+            <p id="player" ></p>
+            <p></p>
+            <p id="computer"></p>
+                
+        </div>
+        
+        <div class="scores">
+            <p class="player" id="p_score">0</p>
+            <p class="computer" id="c_score">0</p>
+        </div>
+    </div>
+    
+</body>
+</html>
